@@ -1,0 +1,43 @@
+{
+  "Typescript React Function Component": {
+    "prefix": "rfi",
+    "body": [
+      "import { FunctionComponent } from 'react'",
+      "",
+      "interface Props {",
+      "$1",
+      "}",
+      "",
+      "const $TM_FILENAME_BASE: FunctionComponent<Props> = ({$2}) => {",
+      "\t\treturn ($3);",
+      "}",
+      "",
+      "export default $TM_FILENAME_BASE"
+    ],
+    "description": "Typescript React Function Component With Interface"
+  },
+  "Typescript React Function Component Without Interface": {
+    "prefix": "rf",
+    "body": [
+      "import { FunctionComponent } from 'react'",
+      "",
+      "const ${TM_FILENAME_BASE/(^\\w+)|(\\w+)|(-)/${1:/pascalcase}${2:/pascalcase}/g}: FunctionComponent = () => {",
+
+      "\t\treturn($2);",
+
+      "}",
+
+      "",
+      "export default ${TM_FILENAME_BASE/(^\\w+)|(\\w+)|(-)/${1:/pascalcase}${2:/pascalcase}/g}"
+    ],
+    "description": "Typescript React Function Component Without Interface"
+  },
+  "Typescript React function component using default export": {
+    "prefix": "edf",
+    "body": [
+      "export default function ${TM_FILENAME_BASE/(^\\w+)|(\\w+)|(-)/${1:/pascalcase}${2:/pascalcase}/g}($1){",
+      "\t\treturn($2);",
+      "}"
+    ]
+  }
+}

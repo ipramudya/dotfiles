@@ -1,0 +1,45 @@
+{
+  "vue setup typescript base": {
+    "prefix": "vty",
+    "body": [
+      "<script setup lang=\"ts\">$1</script>",
+      "",
+      "<template>",
+      "<div>$2</div>",
+      "</template>",
+      "",
+      "<style scoped>",
+      "$3",
+      "</style>"
+    ],
+    "description": "Base VUE Setup Typescript"
+  },
+  "vue setup typescript without style": {
+    "prefix": "vty-ns",
+    "body": [
+      "<script setup lang=\"ts\">$1</script>",
+      "",
+      "<template>",
+      "<div>$2</div>",
+      "</template>"
+    ],
+    "description": "Base VUE Setup Typescript Without Style"
+  },
+  "vue template": {
+    "prefix": "vtm",
+    "body": ["<template>", "<div>$1</div>", "</template>"],
+    "description": "Just Template"
+  },
+  "vue template with style": {
+    "prefix": "vst",
+
+    "body": [
+      "<template>",
+      "<div>$1</div>",
+      "</template>",
+
+      "<style scoped>$2</style>"
+    ],
+    "description": "Just Template and Style"
+  }
+}
